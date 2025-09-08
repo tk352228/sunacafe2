@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>カフェ | ワイヤーフレーム実装</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+    <a class="sr-only" href="#main">本文へスキップ</a>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <div class="container bar">
+        <div class="logo">ロゴ</div>
+        <button
+            class="hamburger"
+            id="hambtn"
+            type="button"
+            aria-controls="menupanel"
+            aria-expanded="false"
+            aria-haspopup="menu"
+            aria-label="メニューを開く"
+        >
+            <span></span>
+        </button>
+        <nav id="menu" aria-label="グローバルナビゲーション">
+            <ul>
+            <li><a class="nav-link" href="#about">ABOUT</a></li>
+            <li><a class="nav-link" href="#gallery">店内ギャラリー</a></li>
+            <li><a class="nav-link" href="#menu-sec">メニュー</a></li>
+            <li><a class="nav-link" href="#access">アクセス</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="menu-panel container" id="menupanel" hidden>
+        <nav aria-label="モバイルメニュー">
+            <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#gallery">店内ギャラリー</a></li>
+            <li><a href="#menu-sec">メニュー</a></li>
+            <li><a href="#access">アクセス</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ===== Hero ===== -->
+        <section class="hero" aria-label="メインビジュアル">
+    <img class="hero-img" src="img/img01.png" alt="店主の人柄が伝わる写真" />
+    <div class="hero-inner container">
+    <div class="hero-copy">
+        <h1>
+            <span class="hline">くつろぎの空間を</span>
+            <span class="hline">あなたに</span>
+        </h1>
+    </div>
+
+
+    </div>
+</section>
+
+
+        <!-- ===== ABOUT ===== -->
+<section id="about" class="section container about">
+    <h2>ABOUT</h2>
+    <div class="about-grid">
+        <div class="about-row">
+        <p class="about-text">
+            こだわりぬいた豆を丁寧に焙煎。<br>素材の香りを最大限に引き出し、毎日飲みたくなる一杯をご提供します。
+        </p>
+        <!-- ここを差し替え -->
+        <div class="about-media">
+            <img src="img/img02.png" alt="焙煎している様子" loading="lazy" decoding="async">
+        </div>
+        </div>
+
+        <div class="about-row">
+        <p class="about-text">
+            北海道産の新鮮なミルクを使用。<br>やさしい甘みとコクで、格別なカフェオレに。
+        </p>
+        <!-- ここを差し替え -->
+        <div class="about-media">
+            <img src="img/img03.png" alt="ミルクを注いでいる様子" loading="lazy" decoding="async">
+        </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="section container gallery">
+  <h2>店内ギャラリー</h2>
+  <div class="grid grid-2">
+    <div class="gallery-item">
+      <img src="img/img04.png" alt="店内の雰囲気 1" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item">
+      <img src="img/img05.png" alt="店内の雰囲気 2" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item">
+      <img src="img/img06.png" alt="店内の雰囲気 3" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item">
+      <img src="img/img07.png" alt="店内の雰囲気 4" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+        <!-- ===== MENU ===== -->
+        <section id="menu-sec" class="section container">
+        <h2>メニュー</h2>
+        <div class="cards cards-3">
+            <div class="ph square" aria-label="メニュー画像1（ダミー）"></div>
+            <div class="ph square" aria-label="メニュー画像2（ダミー）"></div>
+            <div class="ph square" aria-label="メニュー画像3（ダミー）"></div>
+        </div>
+        <ul class="menu-list">
+            <li><span class="menu-name">コーヒー</span><span class="menu-dots"></span><span class="menu-price">¥450</span></li>
+            <li><span class="menu-name">カフェラテ</span><span class="menu-dots"></span><span class="menu-price">¥520</span></li>
+            <li><span class="menu-name">カプチーノ</span><span class="menu-dots"></span><span class="menu-price">¥520</span></li>
+        </ul>
+        </section>
+
+        <!-- ===== ACCESS ===== -->
+        <section id="access" class="section container">
+        <h2>アクセス</h2>
+        <div class="access-grid">
+            <dl class="info">
+            <div>
+                <dt>所在地</dt>
+                <dd class="muted">滋賀県○○市△△1-2-3 古民家カフェ</dd>
+            </div>
+            <div>
+                <dt>電話番号</dt>
+                <dd class="muted">000-1234-5678</dd>
+            </div>
+            <div>
+                <dt>営業時間</dt>
+                <dd class="muted">10:00 – 18:00（火曜定休）</dd>
+            </div>
+            </dl>
+            <div class="map" role="img" aria-label="グーグルマップ（ダミー）">
+            <div>グーグルマップ</div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="footer-inner">
+        <p>SNSリンク（例：<a href="#">Instagram</a> / <a href="#">X</a> / <a href="#">YouTube</a>）</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
